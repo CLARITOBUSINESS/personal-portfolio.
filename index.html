@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
- 
     <title>Ardee Maddox C. Clarito - Personal Portfolio</title>
     <meta name="description" content="Personal portfolio website of Ardee Maddox C. Clarito, an aspiring IT student showcasing skills, projects, and contact information.">
+    
+    <!-- Linked CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-   
     <header>
         <h1>Ardee Maddox C. Clarito</h1>
-        <p>Aspiring IT Student</p>
+        <p class="subtitle">Aspiring IT Student</p>
         
         <nav aria-label="Main Navigation">
             <ul>
@@ -26,17 +27,16 @@
     </header>
 
     <main>
-   
-        <section id="about">
+        <section id="about" class="card">
             <h2>About Me</h2>
             <p>
                 I am 19 years old and chose to pursue Information Technology primarily because of how central technology is to my daily life. I have a natural curiosity for how systems work and a drive to discover how I can apply and implement my skills with computers and digital tools.
             </p>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="card">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skills-list">
                 <li>Coding</li>
                 <li>Drawing</li>
                 <li>Animating</li>
@@ -45,57 +45,56 @@
             </ul>
         </section>
 
-  
-        <section id="projects">
+        <section id="projects" class="card">
             <h2>Projects</h2>
             
-            <article>
-                <h3>test aboutme</h3>
-                <img src="https://via.placeholder.com/300x200" alt="Preview screenshot of the test aboutme project page">
-                
-                <p>
-                    basic info for an IT student.
-                </p>
-                
-                <p>
-                    <a href="https://github.com/CLARITOBUSINESS/first-ever-project" target="_blank" rel="noopener noreferrer">View Project Code on GitHub</a>
-                </p>
-            </article>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>test aboutme</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Preview screenshot of the test aboutme project page">
+                    
+                    <p>
+                        basic info for an IT student.
+                    </p>
+                    
+                    <p>
+                        <a href="https://github.com/CLARITOBUSINESS/first-ever-project" target="_blank" rel="noopener noreferrer" class="btn">View Project Code on GitHub</a>
+                    </p>
+                </article>
+            </div>
         </section>
 
-  
-        <section id="contact">
+        <section id="contact" class="card">
             <h2>Contact Me</h2>
             <p>Feel free to reach out to me through any of the links below:</p>
             
-            <ul>
+            <ul class="contact-links">
                 <li>Email: <a href="mailto:ardee.clarito@carsu.edu.ph">ardee.clarito@carsu.edu.ph</a></li>
                 <li>GitHub Profile: <a href="https://github.com/CLARITOBUSINESS" target="_blank" rel="noopener noreferrer">github.com/CLARITOBUSINESS</a></li>
             </ul>
 
-            <form action="#" method="post">
+            <form action="#" method="post" class="contact-form">
                 <h3>Send a Message</h3>
                 
-                <p>
-                    <label for="name">Name:</label><br>
+                <div class="form-group">
+                    <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
-                </p>
+                </div>
                 
-                <p>
-                    <label for="email">Email:</label><br>
+                <div class="form-group">
+                    <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                </p>
+                </div>
                 
-                <p>
-                    <label for="message">Message:</label><br>
+                <div class="form-group">
+                    <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
-                </p>
+                </div>
                 
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn-submit">Submit</button>
             </form>
         </section>
     </main>
-
 
     <footer>
         <p>&copy; 2026 Ardee Maddox C. Clarito. All rights reserved.</p>
@@ -103,5 +102,3 @@
 
 </body>
 </html>
-
- 
